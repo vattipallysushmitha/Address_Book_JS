@@ -1,3 +1,8 @@
+
+/*Purpose:::Ability to create a New Address Book array and add new Contacts to it
+*Author::SUSHMITHA
+*Date::26-09-2022*/
+
 class Contact{
 
     constructor(...params){
@@ -114,9 +119,21 @@ class Contact{
 }
 
 try{
-    let contact1 = new Contact("Sushmitha", "Reddy", "Gadwal", 
-    "Hyderbad", "Telangana", 123456, "12345678910", "sushmitha@gmail.com");
+    let contact1 = new Contact("Sushmitha", "Reddy", "Gadwal", "Hyderbad", "Telangana", 123456, "12345678910", "sushmitha@gmail.com");;
     console.log(contact1.toString());
+
+    let contact2 = new Contact("akhila","reddy","KrantiNagar","Shahada","Kurnool","121212","91 1122112211","ram@gmail.com");
+    console.log(contact2.toString());
+
+    let contact3 = new Contact("divakar","reddy","krishnanagar","Shahada","Andhra","121212","91 1234562211","rijzan@gmail.com");
+    console.log(contact3.toString());
+
+    var addressBookArr = new Array();
+    addressBookArr.push(contact1);
+    addressBookArr.push(contact2);
+    addressBookArr.push(contact3);
 } catch(e) {
     console.log(e);
 }
+
+console.log(addressBookArr);
